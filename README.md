@@ -1,16 +1,110 @@
-# React + Vite
+# Paradise Nursery 🌿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully-functional houseplant e-commerce website built with React and Redux.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Website**: [https://ah596.github.io/paradise-nursery/](https://ah596.github.io/paradise-nursery/)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🛒 **Shopping Cart** with Redux state management
+- 🌱 **6 Unique Houseplants** across 3 categories
+- 📱 **Responsive Design** for all devices
+- 🎨 **Modern UI** with glassmorphism and animations
+- ⚡ **Fast Performance** with Vite build tool
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19.2.0
+- Redux Toolkit 2.11.0
+- React Router DOM 7.10.1
+- Vite 7.2.4
+- Modern CSS with custom properties
+
+## 🚀 Getting Started
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Visit `http://localhost:5173` to view the app.
+
+### Build
+
+```bash
+npm run build
+```
+
+### Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+## 📦 Project Structure
+
+```
+src/
+├── components/       # Reusable components (Header, ProductCard, CartItem)
+├── pages/           # Page components (Landing, ProductListing, ShoppingCart)
+├── store/           # Redux store and slices
+├── data/            # Plant data
+├── App.jsx          # Main app with routing
+└── index.css        # Global styles
+```
+
+## 🎯 Features Breakdown
+
+### Landing Page
+- Hero section with background image
+- Company description
+- Call-to-action button
+
+### Product Listing
+- 6 houseplants with images, names, and prices
+- Organized into 3 categories:
+  - Low Light
+  - Bright Light  
+  - Air Purifying
+- Add to cart functionality with visual feedback
+
+### Shopping Cart
+- View all cart items
+- Adjust quantities (+/-)
+- Remove items
+- Real-time total calculation
+- Checkout button (Coming Soon)
+- Continue shopping link
+
+### Header
+- Navigation links
+- Cart icon with live item count
+- Sticky positioning
+- Glassmorphism effect
+
+## 🎨 Design Features
+
+- **Color Palette**: Botanical greens and earth tones
+- **Typography**: Inter (UI) and Playfair Display (headings)
+- **Animations**: Fade-in, slide-in, and scale effects
+- **Responsive**: Mobile-first design
+- **Accessibility**: Semantic HTML and ARIA labels
+
+## 📄 License
+
+This project was created as an educational assignment.
+
+## 👤 Author
+
+**ah596**
+- GitHub: [@ah596](https://github.com/ah596)
+- Repository: [paradise-nursery](https://github.com/ah596/paradise-nursery)
