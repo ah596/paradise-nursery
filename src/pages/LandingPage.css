@@ -1,0 +1,119 @@
+.landing-page {
+    min-height: 100vh;
+    position: relative;
+}
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1466781783364-36c955e42a7f?w=1920&h=1080&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-overlay);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    padding: var(--spacing-2xl) var(--spacing-md);
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    color: var(--white);
+    margin-bottom: var(--spacing-md);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: var(--spacing-md);
+    font-weight: 500;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    line-height: 1.6;
+    animation-delay: 0.2s;
+}
+
+.hero-description {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.8;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    animation-delay: 0.4s;
+}
+
+.hero-btn {
+    font-size: 1.25rem;
+    padding: 1.125rem 2.5rem;
+    animation-delay: 0.6s;
+    box-shadow: 0 8px 24px rgba(45, 80, 22, 0.4);
+}
+
+.hero-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(45, 80, 22, 0.5);
+}
+
+.btn-arrow {
+    display: inline-block;
+    transition: transform var(--transition-normal);
+}
+
+.hero-btn:hover .btn-arrow {
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-btn {
+        font-size: 1.125rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.25rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+
+    .hero-description {
+        font-size: 0.9375rem;
+    }
+
+    .hero-section {
+        background-attachment: scroll;
+    }
+}
